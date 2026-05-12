@@ -43,11 +43,7 @@ fi
 
 # Step 4: Activate venv and install any missing packages
 echo -e "${CYAN}[4/5] Checking dependencies...${RESET}"
-if [[ ! -d "venv" ]]; then
-  echo "  Creating venv..."
-  python3 -m venv venv
-fi
-source venv/bin/activate
+
 python -m pip install --upgrade pip
 pip install fastapi "uvicorn[standard]" httpx feedparser aiofiles python-dotenv pydantic dnstwist
 echo -e "  ${GREEN}✓ Dependencies OK${RESET}"
