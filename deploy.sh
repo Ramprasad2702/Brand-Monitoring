@@ -48,7 +48,8 @@ if [[ ! -d "venv" ]]; then
   python3 -m venv venv
 fi
 source venv/bin/activate
-pip install fastapi "uvicorn[standard]" httpx feedparser aiofiles python-dotenv pydantic dnstwist --quiet 2>/dev/null
+python -m pip install --upgrade pip
+pip install fastapi "uvicorn[standard]" httpx feedparser aiofiles python-dotenv pydantic dnstwist
 echo -e "  ${GREEN}✓ Dependencies OK${RESET}"
 
 # Step 5: Start with clean state
