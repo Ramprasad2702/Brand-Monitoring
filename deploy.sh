@@ -74,4 +74,4 @@ echo -e "  ${GREEN}✓${RESET} ${BOLD}[NEW] Dark Web Monitor${RESET}"
 echo -e "  ${GREEN}✓${RESET} ${BOLD}[NEW] Visual Clone Detector${RESET}"
 echo ""
 
-uvicorn brand_monitor:app --host 0.0.0.0 --port 8000 --reload
+echo "Deployment preparation complete."
